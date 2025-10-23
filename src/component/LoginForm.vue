@@ -43,7 +43,7 @@ const submitForm = async () => {
   <div class="page">
     <div class="auth-card">
       <img
-        src="./assets/images/FybrsLogo.png"
+        src="@/assets/images/FybrsLogo.png"
         alt="Fybrs Logo"
         class="logo"
         width="200"
