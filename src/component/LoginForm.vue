@@ -7,7 +7,7 @@ const router = useRouter();
 const toast = useToast();
 
 const mode = ref("login");
-const email = ref("");
+const username = ref("");
 const password = ref("");
 const loading = ref(false);
 
@@ -23,7 +23,10 @@ const submitForm = async () => {
     const res = await fetch(endpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: email.value, password: password.value }),
+      body: JSON.stringify({
+        username: username.value,
+        password: password.value,
+      }),
       credentials: "include",
     });
 
