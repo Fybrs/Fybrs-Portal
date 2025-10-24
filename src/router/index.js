@@ -19,7 +19,7 @@ const router = createRouter({
 
 // Navigation guard
 router.beforeEach((to, from, next) => {
-  const token = localStorage.getItem("authorization");
+  const token = localStorage.getItem("auth_token");
   if (to.meta.requiresAuth && !token) next("/login");
   else next();
 });
