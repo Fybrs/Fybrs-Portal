@@ -69,7 +69,7 @@ const submitForm = async () => {
 
         <label>Email</label>
         <input
-          v-model="email"
+          v-model="username"
           type="email"
           placeholder="you@email.com"
           required
