@@ -3,10 +3,9 @@ import LoginView from "../views/LoginView.vue";
 import PortalHome from "../views/PortalHome.vue"; // create later
 
 const routes = [
-  { path: "/", redirect: "/login" },
   { path: "/login", component: LoginView },
   {
-    path: "/portal",
+    path: "/",
     component: PortalHome,
     meta: { requiresAuth: true },
   },
